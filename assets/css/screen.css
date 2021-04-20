@@ -1965,3 +1965,27 @@ file to add some of your own styles. Well, you've come to
 the right place. Onward!
 
  */
+
+ .post-header-notice {
+    background-color: #f9ffe5;
+    display: flex;
+    padding: 1em;
+    margin: -3em 0 1em;
+    border-radius: 3px;
+    color: #63650e;
+}
+.post-header-notice a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.post-header-notice > svg {
+    width: 1em;
+    margin-right: .5em;
+ }
+.post-header-notice > svg .primary {
+    fill: #dce4a9;
+}
+.post-header-notice > svg .secondary {
+    fill: #f9ffe5;
+}
