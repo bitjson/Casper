@@ -17,7 +17,7 @@
 
     {{!-- hack to install custom Portal – block later portal script with CSP --}}
     <script defer src="{{asset "built/portal.min.js"}}" data-ghost="{{@site.url}}"></script>
-    <meta http-equiv="Content-Security-Policy" content="script-src-elem 'self' 'unsafe-inline' https://code.jquery.com https://www.googletagmanager.com">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://code.jquery.com https://www.googletagmanager.com">
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}

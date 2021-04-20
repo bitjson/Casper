@@ -1973,6 +1973,9 @@ the right place. Onward!
     margin: -3em 0 1em;
     border-radius: 3px;
     color: #63650e;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 .post-header-notice a {
     color: inherit;
@@ -1980,8 +1983,8 @@ the right place. Onward!
     text-decoration: underline;
 }
 .post-header-notice > svg {
-    width: 1em;
-    margin-right: .5em;
+    width: 16px;
+    margin-right: 8px;
  }
 .post-header-notice > svg .primary {
     fill: #dce4a9;
