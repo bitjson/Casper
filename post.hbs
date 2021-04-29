@@ -18,6 +18,13 @@ into the {body} tag of the default.hbs template --}}
             </div>
         {{/has}}
 
+        {{#has tag="#renamed-hashed-witnesses"}}
+            <div class="post-header-notice">
+                {{> "icons/info"}}
+                <p>Note, detached proofs <a href="/pmv3-chip-revised-version-3-transactions/">were previously called "hashed witnesses"</a>.</p>
+            </div>
+        {{/has}}
+
         {{#if primary_tag}}
         <section class="article-tag">
             <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
