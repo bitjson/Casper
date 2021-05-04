@@ -130,4 +130,11 @@ into the {body} tag of the default.hbs template --}}
     </div>
 </aside>
 
+<script>
+    tocbot.init({tocSelector:'.toc',contentSelector:'.gh-content',headingSelector:'h1, h2, h3',hasInnerContainers:true});
+    if(document.querySelector('.toc')) {
+        document.querySelector('article.post').classList.add('has-toc');
+    }
+</script>
+
 {{/post}}
