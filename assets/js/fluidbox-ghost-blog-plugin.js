@@ -25,7 +25,7 @@ window.fluidboxGhostConfig = {
 window.fluidboxGhost = $(function(){
     let targetImages = window.fluidboxGhostConfig.matchImageSelectors || [
       '.kg-gallery-image img', // gallery images
-      '.kg-card img', // lll inline images
+      '.kg-image-card img', // lll inline images
       '.article-image img', // featured images
       // 'p > img', // all images added via markdown
     ];
