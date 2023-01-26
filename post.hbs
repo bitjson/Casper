@@ -37,7 +37,6 @@ into the {body} tag of the default.hbs template --}}
             {{/if}}
         </div>
 
-
         <h1 class="article-title">{{title}}</h1>
 
         {{#if custom_excerpt}}
@@ -75,7 +74,7 @@ into the {body} tag of the default.hbs template --}}
         </div>
 
         {{#match @custom.post_image_style "!=" "Hidden"}}
-
+        {{^has tag="#hide-featured-image"}}
         {{#if feature_image}}
             <figure class="article-image">
                 {{!-- This is a responsive image, it loads different sizes depending on device
@@ -94,7 +93,7 @@ into the {body} tag of the default.hbs template --}}
                 {{/if}}
             </figure>
         {{/if}}
-
+        {{/has}}
         {{/match}}
 
     </header>
