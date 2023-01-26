@@ -2752,3 +2752,15 @@ a.toc-link:hover::before {
 .post-header-notice > svg .secondary {
     fill: #f9ffe5;
 }
+.article-excerpt {
+    opacity: .6;
+}
+.nav-current > a {
+    text-decoration: underline;
+}
+.post-card-excerpt {
+    -webkit-line-clamp: 6;
+}
+.post-card:not(.post-card-large):not(.post-card-full):not(.dynamic):not(.no-image) .post-card-excerpt {
+    -webkit-line-clamp: 4;
+}
